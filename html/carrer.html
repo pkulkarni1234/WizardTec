@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" name="viewport">
+<title>IT Company Website </title>
+<meta content="IT Company Website Template" name="keywords">
+<meta content="IT Company Website Template" name="description">
+   
+ <!-- Favicon -->
+ <link href="../img/logo.jpg" rel="icon">
+
+ <!-- Google Font -->
+ <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet"> 
+
+ <!-- Libraries CSS -->
+ <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ <link href="../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+ <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+ <link href="../lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+ <!-- Main Stylesheet -->
+ <link href="../css/style.css" rel="stylesheet">
+
+</head>
+<body>
+    <div id="nav">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <a href="index.html" class="navbar-brand">
+                    <img src="../img/logo.jpg" alt="Logo" height="250p" width="120px">
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="../index.html" class="nav-item nav-link ">Home</a>
+                        <a href="../html/about.html" class="nav-item nav-link">About</a>
+                        <a href="../html/service.html" class="nav-item nav-link">Service</a>
+                       <a href="../html/carrer.html" class="nav-item nav-link active">Career</a>
+                        <a href="../html/contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+<div class="container1">
+    <img src="../img/oo.avif" alt="Background Image">
+    <div class="form-container1">
+        <h2 style="text-align: center;">Submit Your Resume</h2>
+        <form action="#" method="post" autocomplete="off" onsubmit="emailSend(); reset(); return validateForm();">
+            
+            <input type="text" id="name" name="name" placeholder="enter your name here">
+            <span id="name1"></span>
+        
+            <input type="text" id="email" name="email" placeholder="enter your email here">
+            <span id="email1"></span>
+        
+            <input type="text" id="phone" name="phone" placeholder="enter your number here">
+            <span id="phone1"></span>
+        
+            <textarea id="address" name="message" rows="4" placeholder="enter your address here"></textarea>
+            <span id="address1"></span>
+        
+            <label for="resume">Upload Resume:</label><br><br>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+            <span id="resume1"></span>
+            <input type="submit" value="Submit">
+        
+        </form>
+    
+    </div>
+</div>
+<div class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 footer-links">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><i class="ion-ios-arrow-forward"></i> <a href="../index.html">Home</a></li>
+                        <li><i class="ion-ios-arrow-forward"></i> <a href="about.html">About us</a></li>
+                        <li><i class="ion-ios-arrow-forward"></i> <a href="service.html">Service</a></li>
+                        <li><i class="ion-ios-arrow-forward"></i> <a href="carrer.html">carrer</a></li>
+                        <li><i class="ion-ios-arrow-forward"></i> <a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+               
+
+                <div class="col-lg-6 col-md-6 footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>
+                        AMANORA CHAMBERS,OFFICE NO:335 ,3 <SUP>rd</SUP><br>
+                        FLOOR, HADAPSAR,PUNE-411028,<br>
+                        MAHARASHTRA <br>
+                        <strong>Phone:</strong> +91 7058294809   &emsp13;&emsp13;&emsp13;  +91 9579429661<br>
+                        <strong>Email:</strong> support@whalevirtualsolutions.com<br>
+                    </p>
+
+                    <div class="social-links">
+                        <a href="#"><i class="ion-logo-twitter"></i></a>
+                        <a href="#"><i class="ion-logo-facebook"></i></a>
+                        <a href="#"><i class="ion-logo-linkedin"></i></a>
+                        <a href="#"><i class="ion-logo-instagram"></i></a>
+                        <a href="#"><i class="ion-logo-googleplus"></i></a>
+                    </div>
+
+                </div>
+
+                
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-12 copyright">
+              <center>  Copyright &copy; 2024 <a href=""></a>. </center>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
+
+<!-- Libraries JS -->
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/jquery/jquery-migrate.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+<script src="../js/main.js"></script>
+<!-- Main Javascript -->
+<script>
+    function validateForm() {
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var phone = document.getElementById('phone').value;
+        var message = document.getElementById('address').value;
+        var resume=document.getElementById('resume').value;
+
+        if (name == "") {
+            document.getElementById('name1').innerHTML="**please enter user name**";
+            return false;
+        }
+        if (name.length < 2) {
+            document.getElementById('name1').innerHTML="**please enter at least two characters**";
+            return false;
+        }
+        if (!isNaN(name)) {
+            document.getElementById('name1').innerHTML="**numbers are not allowed**";
+            return false;
+        } else {
+            document.getElementById('name1').innerHTML="";
+        } 
+
+        if (email == "") {
+            document.getElementById('email1').innerHTML="**please enter email**";
+            return false;
+        }
+        if (email.indexOf('@') <= 0) {
+            document.getElementById('email1').innerHTML="**invalid position of @**";
+            return false;
+        }
+        if (email.charAt(email.length-4) != '.') {
+            document.getElementById('email1').innerHTML="**invalid position of . **";
+            return false;
+        } else {
+            document.getElementById('email1').innerHTML="";
+        }
+
+        if (phone == "") {
+            document.getElementById('phone1').innerHTML="**please enter phone number**";
+            return false;
+        }
+        if (isNaN(phone)) {
+            document.getElementById('phone1').innerHTML="**please enter numbers only**";
+            return false;
+        }
+        if (phone.length < 10) {
+            document.getElementById('phone1').innerHTML="**please enter at least 10 numbers**";
+            return false;
+        }
+        if (phone.length > 10) {
+            document.getElementById('phone1').innerHTML="**please enter only 10 digit numbers**";
+            return false;
+        } else {
+            document.getElementById('phone1').innerHTML="";
+        }
+
+        if (message.length == 0) {
+            document.getElementById('address1').innerHTML="**please enter message**";
+            return false;
+        }
+       
+    var resume = document.getElementById('resume1');
+    var filePath = resume.value;
+    var allowedExtensions = /(\.pdf|\.doc|\.docx)$/i;
+
+    if (!allowedExtensions.exec(filePath)) {
+        document.getElementById('resume1').innerHTML= "**Please upload a file with a .pdf, .doc, or .docx extension.**";
+        fileInput.value = '';
+        return false;
+    }
+    return true;
+
+}
+
+    
+</script>
+    
+</body>
+
+</html>
