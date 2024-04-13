@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" name="viewport">
+<title>IT Company Website </title>
+<meta content="IT Company Website Template" name="keywords">
+<meta content="IT Company Website Template" name="description">
+   
+ <!-- Favicon -->
+ <link href="img/logo.jpg" rel="icon">
+
+ <!-- Google Font -->
+ <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet"> 
+
+ <!-- Libraries CSS -->
+ <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+ <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+ <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+ <!-- Main Stylesheet -->
+ <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+    <div id="nav">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/logo.jpg" alt="Logo" height="250p" width="120px">
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                       <a href="carrer.html" class="nav-item nav-link">Careers</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
